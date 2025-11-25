@@ -4,7 +4,7 @@ import React from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 
-function StatCard({ title, value, icon: Icon,color, subtitle, tren, badge }: any) {
+export default function StatCard({ title, value, icon: Icon,color, subtitle, tren, badge }: any) {
     return (
         <Card className="group hover:shadow-lg transition-all duration-200 border-0 bg-gradient-to-br from-white from-white to-gray-50/50">
             <CardHeader className="flex flex-row items-center justify-between pb-3">
@@ -18,13 +18,13 @@ function StatCard({ title, value, icon: Icon,color, subtitle, tren, badge }: any
                         </Badge>
                     )}
                 </div>
-                <div className={`p-3 rounded-xl ${`bg-${color}-100/50`} group-hover:scale-110 traansition-transform duration-200`}>
+                <div className={`p-3 rounded-xl ${color} group-hover:scale-110 traansition-transform duration-200`}>
                     <Icon className="h-5 w-5 text-white" />
                 </div>
             </CardHeader>
             <CardContent className="pt-0">
                 <div className="flex items-baseline space-x-2">
-                    <div className="text-3xl font-bolf text-foreground">
+                    <div className="text-3xl font-bold text-foreground">
                         {value}
                     </div>
                     {tren && (

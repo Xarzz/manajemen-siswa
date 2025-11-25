@@ -29,7 +29,7 @@ export default function TipePelanggaran({ data, total }: { data: any[], total: n
                             <div key={violations.id} className="flex items-center justify-between">
                                 <div className="flex items-center space-x-3">
                                     <div className="w-3 h-3 rounded-full" style={{ backgroundColor: VIOLATIONS_COLORS[index] }} />
-                                    <span className="font-medium">{violations.name}</span>
+                                    <span className="font-medium">{violations.type}</span>
                                 </div>
                                 <div className="flex items-center space-x-3">
                                     <div>
